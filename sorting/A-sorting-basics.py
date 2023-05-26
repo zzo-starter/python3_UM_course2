@@ -6,7 +6,7 @@
 #    By: zoozdev777 <zoozdev777@gmail.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/25 22:43:51 by zoozdev777        #+#    #+#              #
-#    Updated: 2023/05/25 23:03:40 by zoozdev777       ###   ########.fr        #
+#    Updated: 2023/05/25 23:12:53 by zoozdev777       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,26 +16,26 @@ def debug(s):
     print('--- ',s)
     
 #======================    
-header('SORT')
+header('1 SORT')
 l = [1,6,3,8,5,9,44,22]
 l.sort()  #simply sort 
 debug('sort: '+ ''.join(map(str,l)))
 
 #======================    
-header('SORTED')
+header('2 SORTED')
 l = [1,6,3,8,5,9,44,22]
 sortedList = sorted(l) #sort and return sorted 
 debug('sorted: '+ ''.join(map(str,sortedList)))
 
 
 #======================    
-header('SORTED IN REVERSE ORDER')
+header('3 SORTED IN REVERSE ORDER')
 l = [1,6,3,8,5,9,44,22]
 sortedList = sorted(l, reverse= True) #sort and return sorted 
 debug('sorted in reverse: '+ ''.join(map(str,sortedList)))
 
 #======================    
-header('SORTED IN REVERSE ORDER WITH KEY PARAMETER')
+header('4 SORTED IN REVERSE ORDER WITH KEY PARAMETER')
 def absoluteFunc(x):
     if x < 0:
         return -x
